@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+function mostrarSeleccionado()
+{ 
+	if (document.getElementById("radio2").checked)
+	{ alert("tienes estudios primarios");}
+	if (document.getElementById("radio3").checked)
+	{ alert("tienes estudios secundarios");}
+	if (document.getElementById("radio4").checked)
+	{ alert("tienes estudios universitarios");}	
+}
+</script>
+</head>
+<body>
+
+<form>
+<input type="radio" id="radio1" name="estudios"> Sin estudios
+<br>
+<input type="radio" id="radio2" name="estudios"> Primarios
+<br>
+<input type="radio" id="radio3" name="estudios"> Secundarios
+<br>
+<input type="radio" id="radio4" name="estudios"> Universitarios
+<br>
+<input type="button" value="Mostrar" onClick="mostrarSeleccionado()">
+</form>
+
+</body>
+</html>

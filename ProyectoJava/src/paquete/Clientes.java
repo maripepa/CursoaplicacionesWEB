@@ -1,6 +1,6 @@
 package paquete;
 
-import javax.swing.JOptionPane;
+
 
 public class Clientes {
 	

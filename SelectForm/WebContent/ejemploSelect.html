@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+
+ <script type="text/javascript">
+ function cambiarColor()
+ { 
+	 var seleccion=document.getElementById("select1");
+ document.getElementById("text1").value=seleccion.selectedIndex;
+ document.getElementById("text2").value=seleccion.options[seleccion.selectedIndex].text;
+ document.getElementById("text3").value=seleccion.options[seleccion.selectedIndex].value;
+ }
+ </script>
+ </head>
+ <body>
+ <form>
+  <select id="select1" onChange="cambiarColor()">
+  	<option value="0xff0000">Rojo</option>
+  	<option value="0x00ff00">Verde</option>
+  	<option value="0x0000ff">Azul</option>
+  </select>
+  <br>
+  Numero del indice selecionado del objeto SELECT: <input type="text" id="text1"> <br>
+  Texto selecionado:                              <input type="text" id="text2"> <br>
+  valor asociado:                                 <input type="text" id="text3"> <br>
+  </form>
+</body>
+</html>

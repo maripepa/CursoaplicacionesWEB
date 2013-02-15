@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+function contarSeleccionados()
+{
+	var cant=0;
+	if (document.getElementById("checkbox1").checked)
+	{
+	cant++;
+	}
+	if (document.getElementById("checkbox2").checked)
+	{cant ++;}
+	if(document.getElementById("checkbox3").checked)
+    {cant++; }
+	if (document.getElementById("checkbox4").checked)
+	{cant++;}	
+	alert("conoce  "+cant+"  lenguajes");
+}
+</script>
+<form>
+<input type="checkbox" id="checkbox1">JavaScript
+<br>
+<input type="checkbox" id="checkbox2"> PHP
+<br>
+<input type="checkbox" id="checkbox3">JSP
+<br>
+<input type="checkbox" id="checkbox4">VB.Net
+<input type="button" value="Mostrar" onClick="contarSeleccionados()">
+</form>
+
+</body>
+</html>
